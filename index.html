@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body style="margin: 0; padding: 0">
+<style>
+
+  html, body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+
+  body * {
+    font-family: inherit;
+  }
+
+  .hero {
+    width: 100%;
+    margin: 0 auto;    
+    background: #0A1A3B;
+  }
+
+  .hero-inner {
+    width: 980px;
+    height: 90px;
+    position: relative;
+    margin: auto;
+  }  
+
+  .bg {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom:0;
+    height: 100%;
+    width: auto;
+  }  
+
+  .button {
+    position: absolute;
+    right: 2%;
+    left: auto;
+    margin: auto;
+    bottom: 30%;
+    width: 156px;
+    transform: scale(1);
+    animation: pulse 1.6s linear infinite;
+    z-index: 12;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      filter: drop-shadow(0 0 0 rgba(248, 255, 19, 0.7));
+    }
+
+    70% {
+      transform: scale(0.9);
+      filter: drop-shadow(0 0 10px rgba(248, 255, 19, 0));
+    }
+
+    100% {
+      transform: scale(1);
+      filter: drop-shadow(0 0 0 rgba(248, 255, 19, 0));
+    }
+  }
+
+</style>
+<div id="top" class="hero disabled">
+    <div class="hero-inner">
+      <img src="images/bg.jpg" class="bg" alt="">
+      <img src="images/btn.svg" alt="" class="button"/> 
+    </div>
+</div>
+<!--<script type="text/javascript" src="js/body.js"></script>-->
+</body>
+</html>
